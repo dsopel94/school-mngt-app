@@ -6253,7 +6253,7 @@
             }),
             o.a.createElement(s.a, {
               exact: !0,
-              path: '/school-mngt-app/build/auth/dashboard',
+              path: '/xxxxschool-mngt-app/build/auth/dashboard',
               component: l.a,
             }),
             o.a.createElement(s.a, {
