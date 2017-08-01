@@ -460,7 +460,7 @@
         d.a
           .delete('//desolate-peak-57738.herokuapp.com/courses/' + e)
           .then(function(e) {
-            (window.location.href = "path: '/school-mngt-app/build/auth/dashboard"), t({
+            (window.location.href = '/school-mngt-app/build/auth/dashboard'), t({
               type: p.b,
               payload: e.data.courses,
             });
@@ -477,7 +477,7 @@
           .then(function(e) {
             console.log(
               e.data.courses
-            ), (window.location.href = "path: '/school-mngt-app/build/courses/" + e.data.courses._id);
+            ), (window.location.href = '/school-mngt-app/build/courses/' + e.data.courses._id);
           });
       };
     }
@@ -512,7 +512,7 @@
               password: n,
             })
             .then(function(e) {
-              window.location.href = "path: '/school-mngt-app/build/login";
+              window.location.href = '/school-mngt-app/build/login';
             })
             .catch(function(e) {
               window.location.href = '/?msg=This%20username%20already%20exists';
@@ -539,7 +539,7 @@
                 courses: a,
                 streetAddress: r,
                 miscAddress: o,
-              }), (window.location.href = "path: '/school-mngt-app/build/courses/" + a), console.log(window.location.href), console.log(s.data.students, 'Student response');
+              }), (window.location.href = '/school-mngt-app/build/courses/' + a), console.log(window.location.href), console.log(s.data.students, 'Student response');
             });
         };
       },
@@ -557,7 +557,7 @@
               console.log(
                 e.data.students,
                 'Checking after put'
-              ), (window.location.href = "path: '/school-mngt-app/build/courses/" + e.data.students.courses);
+              ), (window.location.href = '/school-mngt-app/build/courses/' + e.data.students.courses);
             });
         };
       },
@@ -606,7 +606,7 @@
                 coursename: e,
                 _creator: v.get('instructor')._id,
                 periods: [],
-              }), (window.location.href = "path: '/school-mngt-app/build/auth/dashboard");
+              }), (window.location.href = '/school-mngt-app/build/auth/dashboard');
             });
         };
       };
@@ -3389,7 +3389,7 @@
             value: function(e) {
               e.preventDefault(), this.setState({
                 isClickedEdit: !this.state.isClickedEdit,
-              }), (window.location.href = "path: '/school-mngt-app/build/editStudent/" +
+              }), (window.location.href = '/school-mngt-app/build/editStudent/' +
                 this.props.id);
             },
           },
@@ -3401,7 +3401,7 @@
               }), this.props.dispatch(c.i(e.target.id)), console.log(
                 e.target.id,
                 'Check target id'
-              ), (window.location.href = "path: '/school-mngt-app/build/courses/" +
+              ), (window.location.href = '/school-mngt-app/build/courses/' +
                 this.props.courses), console.log('this is deleting');
             },
           },
@@ -7011,7 +7011,7 @@
                 o = this.state.student.streetAddress,
                 a = this.state.student.miscAddress,
                 i = this.props.match.params.cuid;
-              (window.location.href = "path: '/school-mngt-app/build/courses/" +
+              (window.location.href = '/school-mngt-app/build/courses/' +
                 i), this.setState({
                 isSubmitted: !0,
               }), this.props.dispatch(c.e(t, n, r, o, a, i));
@@ -7966,7 +7966,7 @@
             value: function(e) {
               m.remove('token'), this.setState({
                 authenticated: !1,
-              }), (window.location.href = "path: '/school-mngt-app/build/login");
+              }), (window.location.href = '/school-mngt-app/build/login');
             },
           },
           {
@@ -7980,7 +7980,7 @@
             value: function() {
               var e = this;
               this.state.authenticated ||
-                (window.location.href = "path: '/school-mngt-app/build/login"), console.log(
+                (window.location.href = '/school-mngt-app/build/login'), console.log(
                 this.state.authenticated,
                 'that the user is authenticated'
               );
@@ -8213,7 +8213,7 @@
             key: 'render',
             value: function() {
               return this.state.submitted &&
-                (window.location.href = "path: '/school-mngt-app/build/courses/" +
+                (window.location.href = '/school-mngt-app/build/courses/' +
                   this.props.match.params.cuid), s.a.createElement(
                 'form',
                 {
@@ -8438,7 +8438,7 @@
                 i = this.props.match.params.cuid;
               this.props.dispatch(
                 c.c(i)
-              ), (window.location.href = "path: '/school-mngt-app/build/courses/" +
+              ), (window.location.href = '/school-mngt-app/build/courses/' +
                 this.props.studentCourse), this.setState({
                 isSubmitted: !0,
               }), this.props.dispatch(c.d(t, n, r, o, a, i));
@@ -9313,7 +9313,7 @@
       'serviceWorker' in navigator &&
         window.addEventListener('load', function() {
           navigator.serviceWorker
-            .register('/school-mngt-app/build/service-worker.js')
+            .register('/service-worker.js')
             .then(function(e) {
               e.onupdatefound = function() {
                 var t = e.installing;
