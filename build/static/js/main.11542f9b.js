@@ -9310,6 +9310,7 @@
   function(e, t, n) {
     'use strict';
     function r() {
+      return true;
       'serviceWorker' in navigator &&
         window.addEventListener('load', function() {
           navigator.serviceWorker
